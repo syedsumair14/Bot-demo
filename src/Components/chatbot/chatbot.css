@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    --chat-color: #0af;
+    --talk-color: #d2d2d2;
+  }
+
+  .container {
+      display: relative;
+  }
+  
+
+.vh-100 {
+    /* position: relative; */
+  }
+  
+  .chat-box {
+    height: 52%;
+    width: 25%;
+    background-color: #fff;
+    border-top-left-radius: .65em;
+    border-top-right-radius: .65em;
+    position: relative;
+    top: 35%;
+    left: 72%;
+    max-height: 90%;
+    overflow: auto;
+  }
+  
+  .chat-window {
+    padding: 0.2em;
+  }
+  
+  .chat-header {
+    padding: 0 0.5em;
+    color: #fff;
+    height: 15%;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    background-color: var(--chat-color);
+    border-top-left-radius: .65em;
+    border-top-right-radius: .65em;
+    z-index: 2;
+  }
+  
+  .chat-pop {
+    height: 60px;
+    width: 60px;
+    background-color: var(--chat-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 95%;
+  }
+  
+  .switch {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 24%;
+    height: 55%;
+  }
+  
+  .user-input {
+    position: relative;
+    /* top: 85%; */
+    /* width: 100%; */
+    /* position: sticky;
+    bottom: 10px; */
+    /* width: 24.6% */
+  }
+  
+  .send {
+    fill: var(--chat-color);
+    height: 25px;
+    position: absolute;
+    top: 15%;
+    left: 89%;
+  }
+  
+  .support-bot {
+      display: flex;
+      flex-wrap: wrap;
+      word-break: break-all;
+      position: relative;
+  }
+  
+  .bot-talking-icon, .bot-talking-icon-header {
+    fill: var(--chat-color);
+    height: 35px;
+    width: 35px;
+  }
+  
+  .bot-wrapper, .customer-wrapper {
+    width: 100%;
+  }
+  
+  .bot-talking-icon-header {
+    fill: #fff;
+  }
+  
+  .customer {
+    display: flex;
+    text-align: end;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    word-break: break-all;
+    position: relative;
+  }
+  
+  .bot-talk, .customer-talk {
+    background-color: var(--talk-color);
+    border-radius: 0.3em;
+    width: 100%;
+  }
+  
+  .option-wrapper {
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .bot-options {
+    display: flex;
+    width: 100%;
+  }
+  
+  .options {
+    background-color: var(--talk-color);
+    padding: .5em;
+    margin: 0.5em 0.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  
+  .options:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  @media(max-width: 768px) {
+    .chat-box {
+      height: auto;
+      width: auto;
+      left: 0;
+      top: 0;
+    }
+    .chat-pop{
+      left: 80%;
+    }
+  }
+  
+  
